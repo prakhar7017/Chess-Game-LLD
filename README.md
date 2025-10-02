@@ -3,6 +3,7 @@
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Maven](https://img.shields.io/badge/Maven-3.8.0-blue.svg)](https://maven.apache.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Build Status](https://github.com/prakhar7017/Chess-Game-LLD/actions/workflows/maven.yml/badge.svg)](https://github.com/prakhar7017/Chess-Game-LLD/actions/workflows/maven.yml)
 
 ![Chess Banner](https://raw.githubusercontent.com/prakhar7017/Chess-Game-LLD/main/chess-banner.png)
 
@@ -73,11 +74,13 @@ com.prakhar
    ```
 
 2. Compile the project:
+
    ```bash
    mvn clean compile
    ```
 
 3. Run the game:
+
    ```bash
    java -cp target/classes com.prakhar.ChessGame
    ```
@@ -93,7 +96,7 @@ com.prakhar
 
 ## 🎲 Board Representation
 
-```
+```text
   0 1 2 3 4 5 6 7
   ---------------
 0|R N B Q K B N R|
@@ -126,6 +129,26 @@ com.prakhar
 - [ ] Add a graphical user interface
 - [ ] Support for computer player (AI)
 
+## 🚀 CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration and deployment:
+
+### Maven Workflow
+
+- **Trigger**: Runs on push to main branch and pull requests
+- **Actions**:
+  - Builds the project with Maven
+  - Runs all unit tests
+  - Uploads build artifacts
+
+### Setup for Contributors
+
+1. Fork and clone the repository
+2. Make your changes
+3. Push to your fork and submit a pull request
+4. CI pipeline will automatically run on your PR
+5. Check the build status and fix any issues before merging
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -136,4 +159,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<p align="center">Built with ❤️ by Prakhar</p>
+## Built with ❤️ by Prakhar
